@@ -1,24 +1,22 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.>
-/* main_serves as the entry point for the program. */
-int main(void) 
+/**
+ *main -this is where the program start running
+*
+ *Return:return zero if no error and non zero if error
+ */
+ int main(void) 
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 5)
-	{
-	printf(% d is positive", n);
-	}
-	else if (n < 0)
-	{
-	printf(% d is negative", n);
-	}
-	else if (n == 0);
-	{
-	printf(% d is zero", n);
-	}
+	if (n > 0)
+	printf("%d is positive\n", n);
+	else if (n == 0)
+	printf("%d is zero\n", n);
+	else   
+	printf("%d is negative\n", n);
 	return (0);
 }
