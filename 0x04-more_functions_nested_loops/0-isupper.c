@@ -1,23 +1,18 @@
 #include "main.h"
 
 /**
- * _isupper - function that checks for alphabetic character
+ * _isupper - checks if a character is uppercase or not
  *
- * @c: return char type
+ * @c: character to be tested
  *
- * Return: return 0 on success and 1 on fail
+ * Return: 1 wether it is, 0 otherwise
  */
 
-int_isupper(int c)
+int _isupper(int c)
 {
-int i = isupper(c);
-
-if (i > 0)
-{
-return (1);
-}
-else
-{
-return (0);
-}
+	if ((c >= 'A') && (c <= 'Z'))
+	{
+		return (1);
+	}
+	return (0);
 }
