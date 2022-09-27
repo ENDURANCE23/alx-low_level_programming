@@ -13,7 +13,7 @@ unsigned int _strpn(char *s, char *accept)
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		bool = l;
+		bool = 1;
 		for (j = 0; *(accept + j) != '\0'; j++)
 		{
 			if (*(s + i) == *(accept + j))
@@ -22,8 +22,9 @@ unsigned int _strpn(char *s, char *accept)
 				break;
 			}
 		}
-		if (bool == l)
+		if (bool == 1)
 			break;
 	}
 	return (i);
+
 }
